@@ -31,11 +31,13 @@ class FroggyModule extends Module
 	 */
 	public function __construct()
 	{
+		// Set name with ClassName of module
+		$this->name = strtolower(get_class($this));
+
 		// Get definition file content
-		$parser = new FroggyDefinitionsModuleParser(__DIR__.'/../definitions.json');
+		$parser = new FroggyDefinitionsModuleParser(_PS_MODULE_DIR_.$this->name.'/definitions.json');
 		$definitions = $parser->parse();
 
-		$this->name = isset($definitions['name']) ? $definitions['name'] : null;
 		$this->tab = isset($definitions['tab']) ? $definitions['tab'] : null;
 		$this->version = isset($definitions['version']) ? $definitions['version'] : 1;
 		$this->need_instance = isset($definitions['need_instance']) ? $definitions['need_instance'] : 0;
