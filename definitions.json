@@ -6,12 +6,12 @@
 	"hooks": [ "displayProductTab", "displayProductTabContent", "displayHeader", "actionAdminControllerSetMedia" ],
 
 	"configurations" : {
-		"FG_NUM_POSTS" : "5",
-		"FG_WIDTH" : "535",
-		"FG_COLORSCHEME" : "light",
-		"FG_SHOW_NB_COMMENTS" : "5",
-		"FG_ONLY_FOR_CUSTOMER" : "0",
-		"FG_FB_ADMINS" : "",
-		"FG_FB_APP_ID" : ""
+		"FC_FC_NUM_POSTS" : "5",
+		"FC_FC_WIDTH" : "535",
+		"FC_FC_COLORSCHEME" : "light",
+		"FC_FC_SHOW_NB_COMMENTS" : "5",
+		"FC_FC_ONLY_FOR_CUSTOMER" : "0",
+		"FC_FC_FB_ADMINS" : "",
+		"FC_FC_FB_APP_ID" : ""
 	}
 }

@@ -93,8 +93,8 @@ class FroggyFacebookComment extends FroggyModule
 			// Register media
 			$this->context->controller->addJs($this->_path.'views/js/facebook-sdk.js');
 			$this->context->smarty->assign($this->name, array(
-				'fb_admins' => Configuration::get('FG_FB_ADMINS'),
-				'fb_app_id' => Configuration::get('FG_FB_APP_ID'),
+				'fb_admins' => Configuration::get('FC_FC_FB_ADMINS'),
+				'fb_app_id' => Configuration::get('FC_FC_FB_APP_ID'),
 				'locale' => strtolower(Configuration::get('PS_LOCALE_LANGUAGE')).'_'.strtoupper(Configuration::get('PS_LOCALE_COUNTRY'))
 			));
 			$content = $this->display(__FILE__, 'hookDisplayHeader.tpl');
@@ -113,7 +113,7 @@ class FroggyFacebookComment extends FroggyModule
 	{
 		$this->smarty->assign($this->name, array(
 			'current_url' => $this->getCurrentUrl(),
-			'show_nb_comment' => $this->isShowRestrictedContent() && Configuration::get('FG_SHOW_NB_COMMENTS')
+			'show_nb_comment' => $this->isShowRestrictedContent() && Configuration::get('FC_FC_SHOW_NB_COMMENTS')
 		));
 		return $this->display(__FILE__, 'hookDisplayProductTab.tpl');
 	}
@@ -136,9 +136,9 @@ class FroggyFacebookComment extends FroggyModule
 		if ($this->isShowRestrictedContent())
 		{
 			$comment_widget_configurations = Configuration::getMultiple(array(
-				'FG_NUM_POSTS',
-				'FG_WIDTH',
-				'FG_COLORSCHEME'
+				'FC_FC_NUM_POSTS',
+				'FC_FC_WIDTH',
+				'FC_FC_COLORSCHEME'
 			));
 			$this->smarty->assign($this->name, array_merge($assign, $comment_widget_configurations));
 		}
@@ -171,26 +171,26 @@ class FroggyFacebookComment extends FroggyModule
 		if (Tools::isSubmit('froggyfacebookcomment_config'))
 		{
 			// Validate fields
-			if (!Validate::isInt(Tools::getValue('FG_NUM_POSTS')))
+			if (!Validate::isInt(Tools::getValue('FC_FC_NUM_POSTS')))
 				$this->errors[] = $this->l('Number of posts is incorrect');
-			if (!Validate::isInt(Tools::getValue('FG_WIDTH')))
+			if (!Validate::isInt(Tools::getValue('FC_FC_WIDTH')))
 				$this->errors[] = $this->l('Width is incorrect');
-			if (!in_array(Tools::getValue('FG_COLORSCHEME'), $this->color_scheme))
+			if (!in_array(Tools::getValue('FC_FC_COLORSCHEME'), $this->color_scheme))
 				$this->errors[] = $this->l('Color scheme is incorrect');
-			if (!Validate::isInt(Tools::getValue('FG_SHOW_NB_COMMENTS')))
+			if (!Validate::isInt(Tools::getValue('FC_FC_SHOW_NB_COMMENTS')))
 				$this->errors[] = $this->l('Show number of comment field is incorrect');
-			if (Tools::getValue('FG_FB_ADMINS'))
+			if (Tools::getValue('FC_FC_FB_ADMINS'))
 			{
-				$uids = explode(',', Tools::getValue('FG_FB_ADMINS'));
+				$uids = explode(',', Tools::getValue('FC_FC_FB_ADMINS'));
 				foreach($uids as $uid)
 					if (!Validate::isInt($uid))
 						$this->errors[] = $this->l('A Facebook UID is incorrect');
 				// Avoid duplicate errors
 				$this->errors = array_unique($this->errors);
 			}
-			if (Tools::getValue('FG_FB_APP_ID') != null && !Validate::isInt(Tools::getValue('FG_FB_APP_ID')))
+			if (Tools::getValue('FC_FC_FB_APP_ID') != null && !Validate::isInt(Tools::getValue('FC_FC_FB_APP_ID')))
 				$this->errors[] = $this->l('Facebook application ID is incorrect');
-			if (!Validate::isInt(Tools::getValue('FG_ONLY_FOR_CUSTOMER')))
+			if (!Validate::isInt(Tools::getValue('FC_FC_ONLY_FOR_CUSTOMER')))
 				$this->errors[] = $this->l('Only for registered customer field is incorrect');
 
 			if (!count($this->errors))
@@ -232,7 +232,7 @@ class FroggyFacebookComment extends FroggyModule
 	 */
 	protected function isShowRestrictedContent()
 	{
-		return (Configuration::get('FG_ONLY_FOR_CUSTOMER') && $this->isCustomerLogged())
-			|| !Configuration::get('FG_ONLY_FOR_CUSTOMER');
+		return (Configuration::get('FC_FC_ONLY_FOR_CUSTOMER') && $this->isCustomerLogged())
+			|| !Configuration::get('FC_FC_ONLY_FOR_CUSTOMER');
 	}
 }
