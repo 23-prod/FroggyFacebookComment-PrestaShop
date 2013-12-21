@@ -2,7 +2,6 @@
 
 global $_MODULE;
 $_MODULE = array();
-$_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_f4c557b299b546895b1fb88f888dd612'] = 'Gold Facebook Comment';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_d8eef06193da3e645caf5cd220f7eee5'] = 'Permet à vos clients de poster des commentaires sur vos fiches produit avec Facebook.';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_9cd43c02e3a9580508811679e53830d5'] = 'Le nombre de commentaires est incorrect';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_0d7a51ba0e5a11a9c7a57ad6e2396f9d'] = 'La taille est incorrecte';
@@ -12,7 +11,6 @@ $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_8fa0ae504dab5
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_7315e96740c76042076c2f393ad5e466'] = 'L\'ID de l\'application Facebook est incorrect';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_58b24bda13392fa7ed8aff4a42e16602'] = 'Le champs \"Uniquement pour les clients enregistrés\" est incorrect';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_4ce8c57ce8373af69aeda4ff9fec7589'] = 'Configurations mises à jour avec succès !';
-$_MODULE['<{froggyfacebookcomment}prestashop>getcontent_f4c557b299b546895b1fb88f888dd612'] = 'Gold Facebook Comment';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_0db377921f4ce762c62526131097968f'] = 'Général';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_3490c425df302ba78917a62ff83dca4c'] = 'Afficher le nombre de commentaires';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_93cba07454f06a4a960172bbd6e2a435'] = 'Oui';
