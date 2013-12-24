@@ -74,7 +74,7 @@ class FroggyFacebookComment extends FroggyModule
 		);
 
 		$this->smarty->assign($this->name, array_merge($configurations, $assign));
-		return $this->display(__FILE__, 'getcontent.tpl');
+		return $this->fcdisplay(__FILE__, 'getcontent.tpl');
 	}
 
 	/**
@@ -97,7 +97,7 @@ class FroggyFacebookComment extends FroggyModule
 				'fb_app_id' => Configuration::get('FC_FC_FB_APP_ID'),
 				'locale' => strtolower(Configuration::get('PS_LOCALE_LANGUAGE')).'_'.strtoupper(Configuration::get('PS_LOCALE_COUNTRY'))
 			));
-			$content = $this->display(__FILE__, 'hookDisplayHeader.tpl');
+			$content = $this->fcdisplay(__FILE__, 'hookDisplayHeader.tpl');
 		}
 		return $content;
 	}
@@ -115,7 +115,7 @@ class FroggyFacebookComment extends FroggyModule
 			'current_url' => $this->getCurrentUrl(),
 			'show_nb_comment' => $this->isShowRestrictedContent() && Configuration::get('FC_FC_SHOW_NB_COMMENTS')
 		));
-		return $this->display(__FILE__, 'hookDisplayProductTab.tpl');
+		return $this->fcdisplay(__FILE__, 'hookDisplayProductTab.tpl');
 	}
 
 	/**
@@ -145,7 +145,7 @@ class FroggyFacebookComment extends FroggyModule
 		else
 			$this->smarty->assign($this->name, $assign);
 
-		return $this->display(__FILE__, 'hookDisplayProductTabContent.tpl');
+		return $this->fcdisplay(__FILE__, 'hookDisplayProductTabContent.tpl');
 	}
 
 	/**
