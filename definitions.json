@@ -3,7 +3,25 @@
 	"version": "1.0",
 	"need_instance": 0,
 
-	"hooks": [ "displayProductTab", "displayProductTabContent", "displayHeader", "actionAdminControllerSetMedia" ],
+	"hooks": {
+		"all" : [
+			"header",
+			"productTab",
+			"productTabContent"
+		],
+		"1.4" : [
+			"extraLeft",
+			"backOfficeHeader"
+		],
+		"1.5" : [
+			"displayLeftColumnProduct",
+			"actionAdminControllerSetMedia"
+		],
+		"1.6" : [
+			"productButtons",
+			"actionAdminControllerSetMedia"
+		]
+	},
 
 	"configurations" : {
 		"FC_FC_NUM_POSTS" : "5",

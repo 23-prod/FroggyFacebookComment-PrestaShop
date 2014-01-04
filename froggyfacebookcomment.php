@@ -235,4 +235,12 @@ class FroggyFacebookComment extends FroggyModule
 		return (Configuration::get('FC_FC_ONLY_FOR_CUSTOMER') && $this->isCustomerLogged())
 			|| !Configuration::get('FC_FC_ONLY_FOR_CUSTOMER');
 	}
+
+	/**
+	 * Backward 1.4
+	 */
+	public function hookBackOfficeHeader($params) { return '<link href="'.$this->_path.'views/js/backend.css" rel="stylesheet" type="text/css" media="all" />'; }
+	public function hookHeader($params) { return $this->hookDisplayHeader($params); }
+	public function hookProductTab($params) { return $this->hookDisplayProductTab($params); }
+	public function hookProductTabContent($params) { return $this->hookDisplayProductTabContent($params); }
 }
