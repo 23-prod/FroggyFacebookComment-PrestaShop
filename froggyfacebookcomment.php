@@ -95,7 +95,7 @@ class FroggyFacebookComment extends FroggyModule
 			$this->context->smarty->assign($this->name, array(
 				'fb_admins' => Configuration::get('FC_FC_FB_ADMINS'),
 				'fb_app_id' => Configuration::get('FC_FC_FB_APP_ID'),
-				'locale' => strtolower(Configuration::get('PS_LOCALE_LANGUAGE')).'_'.strtoupper(Configuration::get('PS_LOCALE_COUNTRY'))
+				'locale' => strtolower($this->context->language->iso_code).'_'.strtoupper($this->context->language->iso_code)
 			));
 			$content = $this->fcdisplay(__FILE__, 'hookDisplayHeader.tpl');
 		}
@@ -239,7 +239,7 @@ class FroggyFacebookComment extends FroggyModule
 	/**
 	 * Backward 1.4
 	 */
-	public function hookBackOfficeHeader($params) { return '<link href="'.$this->_path.'views/js/backend.css" rel="stylesheet" type="text/css" media="all" />'; }
+	public function hookBackOfficeHeader($params) { return '<link href="'.$this->_path.'views/css/backend.css" rel="stylesheet" type="text/css" media="all" />'; }
 	public function hookHeader($params) { return $this->hookDisplayHeader($params); }
 	public function hookProductTab($params) { return $this->hookDisplayProductTab($params); }
 	public function hookProductTabContent($params) { return $this->hookDisplayProductTabContent($params); }
