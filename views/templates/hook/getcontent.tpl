@@ -40,11 +40,11 @@
 		<label>{l s='Show number of comments' mod='froggyfacebookcomment'} <sup class="required">*</sup></label>
 		<div class="margin-form">
 			<img src="../img/admin/enabled.gif" alt="" />
-			<input type="radio" name="FC_FC_SHOW_NB_COMMENTS" value="1" {if (isset($smarty.post.FC_FC_SHOW_NB_COMMENTS) && $smarty.post.FC_FC_SHOW_NB_COMMENTS == 1) || $froggyfacebookcomment.FC_FC_SHOW_NB_COMMENTS}checked="checked"{/if} />
+			<input type="radio" name="FC_FC_SHOW_NB_COMMENTS" value="1" {if (isset($smarty.post.FC_FC_SHOW_NB_COMMENTS) && $smarty.post.FC_FC_SHOW_NB_COMMENTS == 1) || (!isset($smarty.post.FC_FC_SHOW_NB_COMMENTS) && $froggyfacebookcomment.FC_FC_SHOW_NB_COMMENTS)}checked="checked"{/if} />
 			<label class="t">{l s='Yes' mod='froggyfacebookcomment'}</label>
 
 			<img src="../img/admin/disabled.gif" alt="" />
-			<input type="radio" name="FC_FC_SHOW_NB_COMMENTS" value="0" {if (isset($smarty.post.FC_FC_SHOW_NB_COMMENTS) && $smarty.post.FC_FC_SHOW_NB_COMMENTS == 0) || !$froggyfacebookcomment.FC_FC_SHOW_NB_COMMENTS}checked="checked"{/if} />
+			<input type="radio" name="FC_FC_SHOW_NB_COMMENTS" value="0" {if (isset($smarty.post.FC_FC_SHOW_NB_COMMENTS) && $smarty.post.FC_FC_SHOW_NB_COMMENTS == 0) || (!isset($smarty.post.FC_FC_SHOW_NB_COMMENTS) && !$froggyfacebookcomment.FC_FC_SHOW_NB_COMMENTS)}checked="checked"{/if} />
 			<label class="t">{l s='No' mod='froggyfacebookcomment'}</label>
 			<p class="preference_description">{l s='If active, the number of comments is shown in comment tab' mod='froggyfacebookcomment'}</p>
 		</div>
@@ -52,11 +52,11 @@
 		<label>{l s='Only for registered customer' mod='froggyfacebookcomment'} <sup class="required">*</sup></label>
 		<div class="margin-form">
 			<img src="../img/admin/enabled.gif" alt="" />
-			<input type="radio" name="FC_FC_ONLY_FOR_CUSTOMER" value="1" {if (isset($smarty.post.FC_FC_ONLY_FOR_CUSTOMER) && $smarty.post.FC_FC_ONLY_FOR_CUSTOMER == 1) || $froggyfacebookcomment.FC_FC_ONLY_FOR_CUSTOMER}checked="checked"{/if} />
+			<input type="radio" name="FC_FC_ONLY_FOR_CUSTOMER" value="1" {if (isset($smarty.post.FC_FC_ONLY_FOR_CUSTOMER) && $smarty.post.FC_FC_ONLY_FOR_CUSTOMER == 1) || (!isset($smarty.post.FC_FC_ONLY_FOR_CUSTOMER) && $froggyfacebookcomment.FC_FC_ONLY_FOR_CUSTOMER)}checked="checked"{/if} />
 			<label class="t">{l s='Yes' mod='froggyfacebookcomment'}</label>
 
 			<img src="../img/admin/disabled.gif" alt="" />
-			<input type="radio" name="FC_FC_ONLY_FOR_CUSTOMER" value="0" {if (isset($smarty.post.FC_FC_ONLY_FOR_CUSTOMER) && $smarty.post.FC_FC_ONLY_FOR_CUSTOMER == 0) || !$froggyfacebookcomment.FC_FC_ONLY_FOR_CUSTOMER}checked="checked"{/if} />
+			<input type="radio" name="FC_FC_ONLY_FOR_CUSTOMER" value="0" {if (isset($smarty.post.FC_FC_ONLY_FOR_CUSTOMER) && $smarty.post.FC_FC_ONLY_FOR_CUSTOMER == 0) || (!isset($smarty.post.FC_FC_ONLY_FOR_CUSTOMER) && !$froggyfacebookcomment.FC_FC_ONLY_FOR_CUSTOMER)}checked="checked"{/if} />
 			<label class="t">{l s='No' mod='froggyfacebookcomment'}</label>
 			<p class="preference_description">{l s='If active, only logged users see the Facebook comment widget' mod='froggyfacebookcomment'}</p>
 		</div>
@@ -79,12 +79,12 @@
 		<div class="margin-form">
 			<label for="FC_FC_COLORSCHEME_light" class="FG-color-scheme-choice">
 				<img src="{$module_dir}views/img/light.jpg" />
-				<p><input type="radio" name="FC_FC_COLORSCHEME" id="FC_FC_COLORSCHEME_light" value="light" {if (isset($smarty.post.FC_FC_COLORSCHEME) && $smarty.post.FC_FC_COLORSCHEME == 'light') || $froggyfacebookcomment.FC_FC_COLORSCHEME == 'light'}checked="checked"{/if} /> Light</p>
+				<p><input type="radio" name="FC_FC_COLORSCHEME" id="FC_FC_COLORSCHEME_light" value="light" {if (isset($smarty.post.FC_FC_COLORSCHEME) && $smarty.post.FC_FC_COLORSCHEME == 'light') || (!isset($smarty.post.FC_FC_COLORSCHEME) && $froggyfacebookcomment.FC_FC_COLORSCHEME == 'light')}checked="checked"{/if} /> Light</p>
 			</label>
 
 			<label for="FC_FC_COLORSCHEME_dark" class="FG-color-scheme-choice">
 				<img src="{$module_dir}views/img/dark.jpg" />
-				<p><input type="radio" name="FC_FC_COLORSCHEME" id="FC_FC_COLORSCHEME_dark" value="dark" {if (isset($smarty.post.FC_FC_COLORSCHEME) && $smarty.post.FC_FC_COLORSCHEME == 'dark') || $froggyfacebookcomment.FC_FC_COLORSCHEME == 'dark'}checked="checked"{/if} /> Dark</p>
+				<p><input type="radio" name="FC_FC_COLORSCHEME" id="FC_FC_COLORSCHEME_dark" value="dark" {if (isset($smarty.post.FC_FC_COLORSCHEME) && $smarty.post.FC_FC_COLORSCHEME == 'dark') || (!isset($smarty.post.FC_FC_COLORSCHEME) && $froggyfacebookcomment.FC_FC_COLORSCHEME == 'dark')}checked="checked"{/if} /> Dark</p>
 			</label>
 		</div>
 		<div class="clear"></div>
