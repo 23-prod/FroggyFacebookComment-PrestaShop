@@ -31,9 +31,10 @@ $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_045bef9ede4983a4014c4245
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_dcc048044648caf5ad6b4daac0e8eb61'] = 'Usted puede recuperar su UID Facebook sobre ello';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_1c8ac9981dff749ff41dc369729b8d6b'] = 'Página siguiente.';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_9d5e424e99d6ae8528c3fd238a8fb671'] = 'ID de la aplicación Facebook';
-$_MODULE['<{froggyfacebookcomment}prestashop>getcontent_4813c300a6aa154e0efd7212923959ee'] = 'ID de la aplicación Facebook no es obligatorio, sino permite moderar sus comentario sobre';
-$_MODULE['<{froggyfacebookcomment}prestashop>getcontent_301fc4bfac872dd9989bf2ea41d6fdf1'] = 'El sitio desarrollador de Facebook';
+$_MODULE['<{froggyfacebookcomment}prestashop>getcontent_4813c300a6aa154e0efd7212923959ee'] = 'ID de la aplicación Facebook no es obligatorio, sino permite moderar sus comentario sobre:';
+$_MODULE['<{froggyfacebookcomment}prestashop>getcontent_301fc4bfac872dd9989bf2ea41d6fdf1'] = 'El sitio de Facebook';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_c9cc8cce247e49bae79f15173ce97354'] = 'Registrar';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_70397c4b252a5168c5ec003931cea215'] = 'Campos requerido';
 $_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttab_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Commentario';
 $_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent_6f1d1e7a859b38fdd3b64c3e3075ffd4'] = 'Usted debe ser indentificado con ele de poder enviar un comentario';
+$_MODULE['<{froggyfacebookcomment}prestashop>getcontent_f53d1cd25e03173ba9eaa4e493636769'] = '(facultativo)';

@@ -95,17 +95,19 @@
 		<div class="margin-form">
 			<input type="text" name="FC_FC_FB_ADMINS" value="{if isset($smarty.post.FC_FC_FB_ADMINS)}{$smarty.post.FC_FC_FB_ADMINS|escape:'htmlall':'UTF-8'}{else}{$froggyfacebookcomment.FC_FC_FB_ADMINS|escape:'htmlall':'UTF-8'}{/if}" />
 			<p class="preference_description">
+				{l s='The Facebook user ids allow to' mod='froggyfacebookcomment'} <b>{l s='define users which will be allowed to view the moderation options.' mod='froggyfacebookcomment'}</b><br />
 				{l s='The Facebook user ids of adminstrators, must be separated by comma.' mod='froggyfacebookcomment'}<br />
-				{l s='You can get your Facebook UID on the' mod='froggyfacebookcomment'} <a href="https://developers.facebook.com/tools/explorer?method=GET">{l s='folowing page.' mod='froggyfacebookcomment'}</a>
+				{l s='You can get your Facebook UID on the' mod='froggyfacebookcomment'} <a href="http://findmyfacebookid.com/" target="_blank">{l s='FindMyFacebookId website.' mod='froggyfacebookcomment'}</a>
 			</p>
 		</div>
 
 		<label>{l s='Facebook application ID' mod='froggyfacebookcomment'}</label>
 		<div class="margin-form">
 			<input type="text" name="FC_FC_FB_APP_ID" value="{if isset($smarty.post.FC_FC_FB_APP_ID)}{$smarty.post.FC_FC_FB_APP_ID|escape:'htmlall':'UTF-8'}{else}{$froggyfacebookcomment.FC_FC_FB_APP_ID|escape:'htmlall':'UTF-8'}{/if}" />
+			<b class="red">{l s='(optional)' mod='froggyfacebookcomment'}</b>
 			<p class="preference_description">
 				{l s='The Facebook application ID isn\'t required, but it allows to moderate your Facebook comments on:' mod='froggyfacebookcomment'}
-				<a href="http://developers.facebook.com/tools/comments" target="_blank">{l s='Facebook Developer Website' mod='froggyfacebookcomment'}</a>
+				<a href="http://developers.facebook.com/tools/comments" target="_blank">{l s='Facebook Website' mod='froggyfacebookcomment'}</a>
 			</p>
 		</div>
 
