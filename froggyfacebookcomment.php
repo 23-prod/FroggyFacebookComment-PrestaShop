@@ -183,7 +183,7 @@ class FroggyFacebookComment extends FroggyModule
 			{
 				$uids = explode(',', Tools::getValue('FC_FC_FB_ADMINS'));
 				foreach($uids as $uid)
-					if (!Validate::isInt($uid))
+					if (!preg_match('/^[0-9]+$/Ui', trim($uid)))
 						$this->errors[] = $this->l('A Facebook UID is incorrect');
 				// Avoid duplicate errors
 				$this->errors = array_unique($this->errors);
