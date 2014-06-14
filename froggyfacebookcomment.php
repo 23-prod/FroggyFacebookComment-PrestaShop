@@ -188,7 +188,7 @@ class FroggyFacebookComment extends FroggyModule
 				// Avoid duplicate errors
 				$this->errors = array_unique($this->errors);
 			}
-			if (Tools::getValue('FC_FC_FB_APP_ID') != null && !Validate::isInt(Tools::getValue('FC_FC_FB_APP_ID')))
+			if (Tools::getValue('FC_FC_FB_APP_ID') != null && !preg_match('/^[0-9]+$/Ui', trim(Tools::getValue('FC_FC_FB_APP_ID'))))
 				$this->errors[] = $this->l('Facebook application ID is incorrect');
 			if (!Validate::isInt(Tools::getValue('FC_FC_ONLY_FOR_CUSTOMER')))
 				$this->errors[] = $this->l('Only for registered customer field is incorrect');
