@@ -1,24 +1,23 @@
 <?php
 
 global $_MODULE;
-
 $_MODULE = array();
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_db487c89eece86264fe880ba602d0e4a'] = 'Froggy comentarios Facebook';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_d8eef06193da3e645caf5cd220f7eee5'] = 'Les permite a sus clientes enviar comentarios sobre sus fichas producido con Facebook.';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_9cd43c02e3a9580508811679e53830d5'] = 'El número de comentarios es incorrecto';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_0d7a51ba0e5a11a9c7a57ad6e2396f9d'] = 'La talla es incorrecto';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_55ca4f303e9634de9490e492062727c9'] = 'El juego de comentario es incorrecto';
-$_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_9b4997ffcfcd4066b57f2e780bb26f4f'] = 'Campos \\"Fijar el número de comentarios\\"" es incorrecto"';
+$_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_9b4997ffcfcd4066b57f2e780bb26f4f'] = 'Campos \"Fijar el número de comentarios\"\" es incorrecto\"';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_8fa0ae504dab58f966fb30e882416274'] = 'Uno del UID Facebook es incorrecto';
 $_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_7315e96740c76042076c2f393ad5e466'] = 'ID de la aplicación Facebook es incorrecto';
-$_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_58b24bda13392fa7ed8aff4a42e16602'] = 'Campos \\"Únicamente para los clientes registrados\\"" es incorrecto"';
+$_MODULE['<{froggyfacebookcomment}prestashop>froggyfacebookcomment_58b24bda13392fa7ed8aff4a42e16602'] = 'Campos \"Únicamente para los clientes registrados\"\" es incorrecto\"';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_4ce8c57ce8373af69aeda4ff9fec7589'] = '¡ Configuraciones actualizadas con éxito!';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_db487c89eece86264fe880ba602d0e4a'] = 'Froggy comentarios Facebook';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_0db377921f4ce762c62526131097968f'] = 'General';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_3490c425df302ba78917a62ff83dca4c'] = 'Monstrar el número de comentarios';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_93cba07454f06a4a960172bbd6e2a435'] = 'Sí';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_bafd7322c6e97d25b6299b5d6fe8920b'] = 'No';
-$_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_8c259d5638fa8b7bca2a975fd1ef6119'] = 'Si acelerado, el número de comentarios aparecerá en la pestaña "Comentario"';
+$_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_8c259d5638fa8b7bca2a975fd1ef6119'] = 'Si acelerado, el número de comentarios aparecerá en la pestaña \"Comentario\"';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_5fc183ddd3592dbe0a39fcf73482a883'] = 'Únicamente para los clientes registrados';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_1d46cff9a6f6dc1db050d0bd7315832d'] = 'Si acelerado, sólo los clientes inscritos y conectados al sitio tendrán acceso a los comentarios';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent.bootstrap_400fbfc3ac6188ac3caadd5881595563'] = 'Número de comentarios';
@@ -69,4 +68,6 @@ $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_ae65da6895cc05fe7518cf8d
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_c9cc8cce247e49bae79f15173ce97354'] = 'Registrar';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_70397c4b252a5168c5ec003931cea215'] = 'Campos requerido';
 $_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttab_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Commentario';
+$_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent.bootstrap_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Commentario';
+$_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent.bootstrap_6f1d1e7a859b38fdd3b64c3e3075ffd4'] = 'Usted debe ser indentificado con ele de poder enviar un comentario';
 $_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent_6f1d1e7a859b38fdd3b64c3e3075ffd4'] = 'Usted debe ser indentificado con ele de poder enviar un comentario';

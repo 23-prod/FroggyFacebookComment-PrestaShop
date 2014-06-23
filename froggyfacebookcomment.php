@@ -111,6 +111,10 @@ class FroggyFacebookComment extends FroggyModule
 	 */
 	public function hookDisplayProductTab($params)
 	{
+		if (version_compare(_PS_VERSION_, '1.6.0') >= 0) {
+			return;
+		}
+
 		$this->smarty->assign($this->name, array(
 			'current_url' => $this->getCurrentUrl(),
 			'show_nb_comment' => $this->isShowRestrictedContent() && Configuration::get('FC_FC_SHOW_NB_COMMENTS')
