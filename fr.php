@@ -69,4 +69,6 @@ $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_ae65da6895cc05fe7518cf8d
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_c9cc8cce247e49bae79f15173ce97354'] = 'Enregistrer';
 $_MODULE['<{froggyfacebookcomment}prestashop>getcontent_70397c4b252a5168c5ec003931cea215'] = 'Champs requis';
 $_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttab_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Commentaires';
+$_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent.bootstrap_8413c683b4b27cc3f4dbd4c90329d8ba'] = 'Commentaires';
+$_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent.bootstrap_6f1d1e7a859b38fdd3b64c3e3075ffd4'] = 'Vous devez être connecté pour ajouter un commentaire';
 $_MODULE['<{froggyfacebookcomment}prestashop>hookdisplayproducttabcontent_6f1d1e7a859b38fdd3b64c3e3075ffd4'] = 'Vous devez être identifié afin de pouvoir  poster un commentaire';
