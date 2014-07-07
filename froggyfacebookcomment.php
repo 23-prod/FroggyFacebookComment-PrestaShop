@@ -133,6 +133,7 @@ class FroggyFacebookComment extends FroggyModule
 	{
 		$assign = array(
 			'current_url' => $this->getCurrentUrl(),
+			'show_nb_comment' => $this->isShowRestrictedContent() && Configuration::get('FC_FC_SHOW_NB_COMMENTS'),
 			'show_facebook_comment_widget' => $this->isShowRestrictedContent()
 		);
 
